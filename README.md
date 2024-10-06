@@ -3,10 +3,10 @@
 > Forked from https://github.com/darobin/notion-backup
 
 由于GitHub Actions对于Actions secrets and variables的配置方法做了更新（增加了Environment这一项），
-因此 `.github/workflows/backup.yml` 中或许环境变量如 `NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}` 时，
+因此 `.github/workflows/backup.yml` 中获取环境变量如 `NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}` 时，
 需要在前面指定所使用的环境。
 
-如下注释位置：
+修改如下注释位置即可：
 ```yml
 ...
 jobs:

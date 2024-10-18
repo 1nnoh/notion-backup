@@ -1,7 +1,8 @@
 # Notion backup
 
 > Forked from https://github.com/darobin/notion-backup
-> 常规版 GitHub 遵循以上仓库操作指南即可。Pro 版的操作稍有不同，以下为修改方法。
+
+> **常规版 GitHub 遵循以上仓库操作指南即可。Pro 版的操作稍有不同，以下为修改方法。**
 
 由于 Pro 版的 GitHub Actions 对于 Actions secrets and variables 的配置方法做了更新（增加了 Environment 这一项），
 因此 `.github/workflows/backup.yml` 中获取环境变量如 `NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}` 时，
